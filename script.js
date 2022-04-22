@@ -1,6 +1,6 @@
 let timer = document.getElementById("answer");
 
-let last_fail = 1650447965000; //Date.now();
+let last_fail = 1649570700000;
 
 
 function updateTimer(last_fail) {
