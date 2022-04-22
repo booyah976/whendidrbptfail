@@ -1,6 +1,6 @@
-let timer = document.getElementById("answer");
+last_fail = a
 
-let last_fail = 1649570700000;
+let timer = document.getElementById("answer");
 
 
 function updateTimer(last_fail) {
@@ -21,4 +21,4 @@ function updateTimer(last_fail) {
 
 setInterval(function () {
     timer.textContent = updateTimer(last_fail);
-}, 200)
+}, 200);
