@@ -1,4 +1,4 @@
-last_fail = 1649570700000;
+last_fail = a;
 
 let timer = document.getElementById("answer");
 
