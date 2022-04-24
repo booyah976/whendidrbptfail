@@ -19,6 +19,38 @@ function updateTimer(last_fail) {
     return (`${days}:${hours}:${minutes}:${seconds} ago`);
 }
 
+let calendar2022 = ['BHR', 'SAU', 'AUS', 'EMI', 'MIA', 'ESP', 'MON', 'AZE', 'CAN', 'GBR', 'AUT', 'FRA', 'HUN', 'BEL', 'NED', 'ITA', '', 'SIN', 'JPN', 'USA', 'MXC', 'SAP', 'ABU']
+let failures = {
+    'BHR': 3,
+    'SAU': 1,
+    'AUS': 1,
+}
+
+
+function createBoxes(parent) {
+    for (let i = 0; i <= 22; i += 1) {
+        let div = document.createElement("div");
+        div.id = "Race" + String(i);
+        div.className = "race-box"
+        div.textContent = calendar2022[i];
+
+        if (calendar2022[i] in failures) {
+            div.style.color = "red";
+        } else {
+            div.style.color = "green";
+        }
+
+        if (i > 3) {
+            div.style.color = "grey";
+        }
+
+        parent.appendChild(div);
+    }
+}
+
+raceBoxes = document.getElementById("race-boxes");
+createBoxes(raceBoxes);
+
 setInterval(function () {
     timer.textContent = updateTimer(last_fail);
 }, 200);
