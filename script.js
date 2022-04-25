@@ -48,8 +48,28 @@ function createBoxes(parent) {
     }
 }
 
+
+function populateTable(incidents, table) {
+    incidents.forEach(element => {
+        let row = document.createElement("tr");
+        row.id = element["sno"];
+        row.className = "history-row";
+        row.innerHTML = `
+                    <td>${element["sno"]}</td>
+                    <td>${element["driver"]}</td>
+                    <td>${element["team"]}</td>
+                    <td>${element["race"]}</td>
+                    <td>${element["video"]}</td>
+                    <td>${element["cause"]}</td>`;
+        table.appendChild(row);
+    });
+}
+
 raceBoxes = document.getElementById("race-boxes");
 createBoxes(raceBoxes);
+
+table = document.getElementById("history-table");
+populateTable(incidents, table)
 
 setInterval(function () {
     timer.textContent = updateTimer(last_fail);

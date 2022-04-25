@@ -93,7 +93,7 @@ body {
     /* justify-content: center; */
 }
 
-.question {
+.big-text {
     font-size: 50px;
 }
 
@@ -121,4 +121,51 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+th,
+tr,
+td {
+    border: 1px solid;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.history {
+    margin: 25px;
+}
+
+.history-items {
+    margin-top: 15px;
+}
+
+thead th:nth-child(1) {
+    width: 5%;
+}
+
+thead th:nth-child(2) {
+    width: 10%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 15%;
+}
+
+thead th:nth-child(5) {
+    width: 25%;
+}
+
+thead th:nth-child(6) {
+    width: 20%;
+}
+
+th,
+td {
+    padding: 20px;
 }
