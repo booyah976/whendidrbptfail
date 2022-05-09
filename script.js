@@ -27,6 +27,7 @@ let failures = {
     'BHR': 3,
     'SAU': 1,
     'AUS': 1,
+    'MIA': 1,
 }
 
 
@@ -43,7 +44,7 @@ function createBoxes(parent) {
             div.style.color = "green";
         }
 
-        if (i > 3) {
+        if (i > 4) {
             div.style.color = "grey";
         }
 
