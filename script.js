@@ -11,9 +11,6 @@ function updateTimer(last_fail) {
     let seconds = Math.floor(sec_passed - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60);
 
     //im too braindead to do something smart for this
-    // let _ = [days, hours, minutes, seconds]
-    // _ = _.map()
-
     days = days.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
     hours = hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
     minutes = minutes.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
