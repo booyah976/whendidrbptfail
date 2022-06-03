@@ -44,7 +44,7 @@ function createBoxes(parent) {
             div.style.color = "green";
         }
 
-        if (i > 4) {
+        if (i > 6) {
             div.style.color = "grey";
         }
 
